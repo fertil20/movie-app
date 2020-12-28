@@ -2,7 +2,7 @@
 package com.project.movieapp.client.view;
 
 import com.project.movieapp.client.service.MoviesService;
-import com.project.movieapp.dto.MovieDto;
+import com.project.movieapp.dto.Movie;
 
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
@@ -42,11 +42,11 @@ public class MainPage extends JDialog {
     public MainPage(MoviesService moviesService) {
         setContentPane(contentPane);
         setModal(true);
-        List<MovieDto> movies = moviesService.list();
-        MovieDto movie1 = movies.get(0);
-        MovieDto movie2 = movies.get(1);
-        MovieDto movie3 = movies.get(2);
-        MovieDto movie4 = movies.get(3);
+        List<Movie> movies = moviesService.list();
+        Movie movie1 = movies.get(0);
+        Movie movie2 = movies.get(1);
+        Movie movie3 = movies.get(2);
+        Movie movie4 = movies.get(3);
         Label1.setText(movie1.getName());
         Label2.setText(movie2.getName());
         Label3.setText(movie3.getName());
@@ -57,7 +57,7 @@ public class MainPage extends JDialog {
         Poster4.addMouseListener(getMouseListener(movie4));
     }
 
-    private MouseAdapter getMouseListener(MovieDto movie) {
+    private MouseAdapter getMouseListener(Movie movie) {
         return new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
