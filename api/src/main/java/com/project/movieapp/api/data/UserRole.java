@@ -1,4 +1,4 @@
-package com.project.movieapp.dto;
+package com.project.movieapp.api.data;
 
 
 public class UserRole extends Identified<UserRole> {

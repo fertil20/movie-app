@@ -5,11 +5,11 @@ import javax.swing.*;
 public class MoviePage extends JDialog {
     private JPanel Filmname;
     private JPanel Country;
-    private JTextPane description;
-    private JLabel genre;
+    private JTextArea description;
+    private JTextArea genre;
     private JLabel duration;
     public JPanel contentPane1;
-    private JLabel filmName;
+    private JTextPane filmName;
     private JLabel countryName;
 
     public void setDescription(String description) {
@@ -35,5 +35,7 @@ public class MoviePage extends JDialog {
     public MoviePage() {
         setContentPane(contentPane1);
         setModal(true);
+        description.setLineWrap(true);
+        description.setWrapStyleWord(true);
     }
 }

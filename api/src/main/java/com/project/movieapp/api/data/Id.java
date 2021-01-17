@@ -1,4 +1,4 @@
-package com.project.movieapp.dto;
+package com.project.movieapp.api.data;
 
 public class Id<U> {
     public Id(int value) {

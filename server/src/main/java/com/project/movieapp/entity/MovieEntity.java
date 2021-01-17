@@ -4,7 +4,6 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.sql.Time;
-import java.time.Instant;
 
 @Data
 @Entity

@@ -1,6 +1,6 @@
-package com.project.movieapp.client.service;
+package com.project.movieapp.api.service;
 
-import com.project.movieapp.dto.Movie;
+import com.project.movieapp.api.data.Movie;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;

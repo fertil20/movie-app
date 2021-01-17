@@ -1,4 +1,4 @@
-package com.project.movieapp.dto;
+package com.project.movieapp.api.data;
 
 public class Identified<T extends Identified<T>> {
     private Id<T> id;

@@ -1,8 +1,8 @@
 
 package com.project.movieapp.client.view;
 
-import com.project.movieapp.client.service.MoviesService;
-import com.project.movieapp.dto.Movie;
+import com.project.movieapp.api.service.MoviesService;
+import com.project.movieapp.api.data.Movie;
 
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
@@ -62,8 +62,6 @@ public class MainPage extends JDialog {
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
-
-                JFrame frame = new JFrame("MoviePage");
                 MoviePage moviePage = new MoviePage();
 //                frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 moviePage.setName("MoviePage");
@@ -74,9 +72,9 @@ public class MainPage extends JDialog {
                 moviePage.setCountryName(movie.getCountry());
                 moviePage.setDescription(movie.getDescription());
                 moviePage.setDuration(movie.getDuration().toString());
-                frame.setContentPane(moviePage.contentPane1);
-                frame.pack();
-                frame.setVisible(true);
+                moviePage.setContentPane(moviePage.contentPane1);
+                moviePage.pack();
+                moviePage.setVisible(true);
 
 //                moviePage.pack();
 //                moviePage.setVisible(true);
