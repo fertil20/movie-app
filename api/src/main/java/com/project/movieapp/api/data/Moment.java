@@ -3,39 +3,39 @@ package com.project.movieapp.api.data;
 import java.sql.Date;
 
 public class Moment {
-    private String Name;
-    private Date Date;
-    private String Description;
-    private String Person;
-    private String Country;
+    private String name;
+    private Date date;
+    private String description;
+    private String person;
+    private String country;
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public Date getDate() {
-        return Date;
+        return date;
     }
 
     public String getDescription() {
-        return Description;
+        return description;
     }
 
     public String getPerson() {
 
-        return Person;
+        return person;
     }
 
     public String getCountry() {
 
-        return Country;
+        return country;
     }
 
-    public Moment(String Name, Date Date, String Description, String Person, String Country) {
-        this.Name = Name;
-        this.Date = Date;
-        this.Description = Description;
-        this.Person = Person;
-        this.Country = Country;
+    public Moment(String name, Date Date, String description, String person, String country) {
+        this.name = name;
+        this.date = date;
+        this.description = description;
+        this.person = person;
+        this.country = country;
     }
 }

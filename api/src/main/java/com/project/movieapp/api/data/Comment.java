@@ -3,25 +3,25 @@ package com.project.movieapp.api.data;
 import java.sql.Date;
 
 public class Comment {
-    private String Text;
-    private Date Date;
-    private String Author; //Соотнести с Юзером?
+    private String text;
+    private Date date;
+    private String author; //Соотнести с Юзером?
 
     public String getText() {
-        return Text;
+        return text;
     }
 
     public Date getDate() {
-        return Date;
+        return date;
     }
 
     public String getAuthor() {
-        return Author;
+        return author;
     }
 
-    public Comment(String Text, Date Date, String Author) {
-        this.Text = Text;
-        this.Date = Date;
-        this.Author = Author;
+    public Comment(String text, Date date, String author) {
+        this.text = text;
+        this.date = date;
+        this.author = author;
     }
 }

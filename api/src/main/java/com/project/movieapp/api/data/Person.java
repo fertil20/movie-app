@@ -3,46 +3,46 @@ package com.project.movieapp.api.data;
 import java.sql.Date;
 
 public class Person {
-    private String Name;
-    private String Activity;
-    private Date Birth;
-    private Date Death;
-    private String Homeland;
-    private String Moment;
+    private String name;
+    private String activity;
+    private Date birth;
+    private Date death;
+    private String homeland;
+    private String moment;
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public String getActivity() {
-        return Activity;
+        return activity;
     }
 
     public Date getBirth() {
-        return Birth;
+        return birth;
     }
 
     public Date getDeath() {
 
-        return Death;
+        return death;
     }
 
     public String getHomeland() {
 
-        return Homeland;
+        return homeland;
     }
 
     public String getMoment() {
 
-        return Moment;
+        return moment;
     }
 
-    public Person(String Name, String Activity, Date Birth, Date Death, String Homeland, String Moment) {
-        this.Name = Name;
-        this.Activity = Activity;
-        this.Birth = Birth;
-        this.Death = Death;
-        this.Homeland = Homeland;
-        this.Moment = Moment;
+    public Person(String name, String activity, Date birth, Date death, String homeland, String moment) {
+        this.name = name;
+        this.activity = activity;
+        this.birth = birth;
+        this.death = death;
+        this.homeland = homeland;
+        this.moment = moment;
     }
 }
