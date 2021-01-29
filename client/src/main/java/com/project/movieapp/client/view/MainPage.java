@@ -22,10 +22,10 @@ public class MainPage {
     JPanel poster2 = new JPanel();
     JPanel poster3 = new JPanel();
     JPanel poster4 = new JPanel();
-    JLabel film1 = new JLabel();
-    JLabel film2 = new JLabel();
-    JLabel film3 = new JLabel();
-    JLabel film4 = new JLabel();
+    JLabel label3 = new JLabel();
+    JLabel label4 = new JLabel();
+    JLabel label5 = new JLabel();
+    JLabel label6 = new JLabel();
 
 
     public static void main(String[] args) {
@@ -45,17 +45,17 @@ public class MainPage {
         Movie movie2 = movies.get(1);
         Movie movie3 = movies.get(2);
         Movie movie4 = movies.get(3);
-        film1.setText(movie1.getName());
-        film2.setText(movie2.getName());
-        film3.setText(movie3.getName());
-        film4.setText(movie4.getName());
+        label3.setText(movie1.getName());
+        label4.setText(movie2.getName());
+        label5.setText(movie3.getName());
+        label6.setText(movie4.getName());
       //  poster1.addMouseListener(getMouseListener(movie1));
        // poster2.addMouseListener(getMouseListener(movie2));
        // poster3.addMouseListener(getMouseListener(movie3));
       //  poster4.addMouseListener(getMouseListener(movie4));
 
         contentPane.setLayout(new GridLayout(5, 4));
-        final JPanel panel1 = new JPanel();
+        JPanel panel1 = new JPanel();
         panel1.setLayout(new GridLayout(3, 2));
         contentPane.add(panel1);
         final JLabel label1 = new JLabel();
@@ -65,10 +65,10 @@ public class MainPage {
         final JLabel label2 = new JLabel();
         label2.setText("Изучай историю по фильмам!");
         panel1.add(label2, BorderLayout.WEST);
-        final DefaultComboBoxModel defaultComboBoxModel1 = new DefaultComboBoxModel();
-        defaultComboBoxModel1.addElement("Искать по названию");
-        comboBox1.setModel(defaultComboBoxModel1);
-        panel1.add(comboBox1, BorderLayout.WEST);
+      //  final DefaultComboBoxModel defaultComboBoxModel1 = new DefaultComboBoxModel();
+       // defaultComboBoxModel1.addElement("Искать по названию");
+       // comboBox1.setModel(defaultComboBoxModel1);
+       // panel1.add(comboBox1, BorderLayout.WEST);
         poster2.setLayout(new GridLayout(1, 1));
         poster2.setBackground(new Color(-1312769));
         contentPane.add(poster2, BorderLayout.CENTER);
@@ -82,13 +82,9 @@ public class MainPage {
         poster3.setBackground(new Color(-1312769));
         contentPane.add(poster3, BorderLayout.CENTER);
         poster3.setBorder(BorderFactory.createTitledBorder(null, "NULL", TitledBorder.DEFAULT_JUSTIFICATION, TitledBorder.DEFAULT_POSITION, null, null));
-        final JLabel label3 = new JLabel();
         contentPane.add(label3, BorderLayout.CENTER);
-        final JLabel label4 = new JLabel();
         contentPane.add(label4);
-        final JLabel label5 = new JLabel();
         contentPane.add(label5);
-        final JLabel label6 = new JLabel();
         contentPane.add(label6);
         contentPane.add(mainButton, BorderLayout.CENTER);
         contentPane.add(momentButton);
