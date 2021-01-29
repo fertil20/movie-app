@@ -2,7 +2,7 @@ package com.project.movieapp.client.view;
 
 import javax.swing.*;
 
-public class MoviePage extends JDialog {
+public class MoviePage {
     private JPanel Filmname;
     private JPanel Country;
     private JTextArea description;
@@ -33,8 +33,8 @@ public class MoviePage extends JDialog {
     }
 
     public MoviePage() {
-        setContentPane(contentPane1);
-        setModal(true);
+        contentPane1.setName("Movie Page");
+
         description.setLineWrap(true);
         description.setWrapStyleWord(true);
     }
