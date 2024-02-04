@@ -2,7 +2,7 @@ package com.project.movieapp.entity;
 
 import lombok.Data;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.sql.Time;
 
 @Data
